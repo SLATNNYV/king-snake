@@ -1,9 +1,9 @@
 import { createClient } from '@supabase/supabase-js';
 
-const supabaseUrl = 'https://tmrrbryjkplgfvfmpife.supabase.co';
-const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRtcnJicnlqa3BsZ2Z2Zm1waWZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg2NDU1MDUsImV4cCI6MjA2NDIyMTUwNX0.34E-dmKmnQOwttKeX9yIxAbvY4w33sGpdYJVN9GCF54'; // sua chave completa
+const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
+const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
 
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+export const supabase = createClient(supabaseUrl, supabaseAnonKey);
 
 async function fetchProducts() {
   const { data, error } = await supabase
