@@ -18,12 +18,11 @@ export default function Catalog() {
       {products.map((product) => (
         <Card key={product.id}>
           <CardContent className="p-4">
-            <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded mb-2" />
-            <h2 className="text-xl font-semibold">{product.name}</h2>
-            <p className="text-gray-700">{product.description}</p>
-            <p className="text-sm text-green-600 font-bold mt-1">R$ {product.price}</p>
+            <img src={product.imagem} alt={product.nome} className="w-full h-48 object-cover rounded mb-2" />
+            <h2 className="text-xl font-semibold">{product.nome}</h2>
+            <p className="text-sm text-green-600 font-bold mt-1">{product.preco}</p>
             <a
-              href={`https://wa.me/55SEUNUMERO?text=Gostaria%20de%20comprar%20o%20produto%20${encodeURIComponent(product.name)}`}
+              href={`https://wa.me/55SEUNUMERO?text=Gostaria%20de%20comprar%20o%20produto%20${encodeURIComponent(product.nome)} por ${encodeURIComponent(product.preco)}`}
               className="text-blue-600 underline mt-2 inline-block"
               target="_blank"
               rel="noopener noreferrer"

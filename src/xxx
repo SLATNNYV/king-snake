@@ -1,7 +1,7 @@
-fetch("https://tmrrbryjkplgfvfmpife.supabase.co/rest/v1/produtos", {
+fetch('https://tmrrbryjkplgfvfmpife.supabase.co/rest/v1/produtos?select=*', {
   headers: {
-    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRtcnJicnlqa3BsZ2Z2Zm1waWZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg2NDU1MDUsImV4cCI6MjA2NDIyMTUwNX0.34E-dmKmnQOwttKeX9yIxAbvY4w33sGpdYJVN9GCF54",
-    Authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRtcnJicnlqa3BsZ2Z2Zm1waWZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg2NDU1MDUsImV4cCI6MjA2NDIyMTUwNX0.34E-dmKmnQOwttKeX9yIxAbvY4w33sGpdYJVN9GCF54"
+    apikey: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRtcnJicnlqa3BsZ2Z2Zm1waWZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg2NDU1MDUsImV4cCI6MjA2NDIyMTUwNX0.34E-dmKmnQOwttKeX9yIxAbvY4w33sGpdYJVN9GCF54', // sua chave completa
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRtcnJicnlqa3BsZ2Z2Zm1waWZlIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDg2NDU1MDUsImV4cCI6MjA2NDIyMTUwNX0.34E-dmKmnQOwttKeX9yIxAbvY4w33sGpdYJVN9GCF54'
   }
 })
   .then(res => res.json())
